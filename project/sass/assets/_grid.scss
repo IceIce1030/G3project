@@ -1,0 +1,118 @@
+*{
+	box-sizing: border-box;
+}
+.container{
+	margin: auto;
+	padding-right:$grid-container-padding;
+	padding-left:$grid-container-padding;
+}
+.row{
+	margin-left: -$grid-col-padding;
+	margin-right: -$grid-col-padding;
+}
+.container:after,
+.row:after{
+	content: '';
+	display: block;
+	height: 0;
+	width: 100%;
+	clear: both;
+}
+.clear{
+	clear:both;
+}
+@for $i from 1 through $grid-column{
+	.col-xs-#{$i},.col-sm-#{$i},.col-md-#{$i},.col-lg-#{$i}{
+		float: left;
+		padding: 0 $grid-col-padding;
+	}
+}
+div[class*= col-xs-push],
+div[class*= col-xs-pull],
+div[class*= col-sm-push],
+div[class*= col-sm-pull],
+div[class*= col-md-push],
+div[class*= col-md-pull],
+div[class*= col-lg-push],
+div[class*= col-lg-pull]{position: relative;}
+
+@include respones(xs) {
+		.container{
+			width:$grid-xs-container;
+		}
+	@for $i from 1 through $grid-column{
+		.col-xs-#{$i}{
+			width: 100%/$grid-column*$i;
+		}
+		.col-xs-push-#{$i}{
+			left:100%/$grid-column*$i;
+		}
+		.col-xs-pull-#{$i}{
+			right:100%/$grid-column*$i;
+		}
+		.col-xs-offset-#{$i}{
+			margin-left:100%/$grid-column*$i;
+		}
+	}
+}
+@include respones(sm) {
+		.container{
+			width:$grid-sm-container;
+		}
+	@for $i from 1 through $grid-column{
+		.col-sm-#{$i}{
+			width: 100%/$grid-column*$i;
+		}
+		.col-sm-push-#{$i}{
+			left:100%/$grid-column*$i;
+		}
+		.col-sm-pull-#{$i}{
+			right:100%/$grid-column*$i;
+		}
+		.col-sm-offset-#{$i}{
+			margin-left:100%/$grid-column*$i;
+		}
+	}
+}
+@include respones(md){
+		.container {
+	    width: $grid-md-container;
+	  }
+	@for $i from 1 through $grid-column{
+		.col-md-#{$i}{
+			width: 100%/$grid-column*$i;
+		}
+		.col-md-push-#{$i}{
+			left:100%/$grid-column*$i;
+		}
+		.col-md-pull-#{$i}{
+			right:100%/$grid-column*$i;
+		}
+		.col-md-offset-#{$i}{
+			margin-left:100%/$grid-column*$i;
+		}
+	}
+}
+@include respones(lg) {
+		.container {
+	    width:$grid-lg-container
+	  }
+	@for $i from 1 through $grid-column{
+		.col-lg-#{$i}{
+			width: 100%/$grid-column*$i;
+		}
+		.col-lg-push-#{$i}{
+			left:100%/$grid-column*$i;
+		}
+		.col-lg-pull-#{$i}{
+			right:100%/$grid-column*$i;
+		}
+		.col-lg-offset-#{$i}{
+			margin-left:100%/$grid-column*$i;
+		}
+	}
+}
+.rwd-img{
+			width: 100%;
+			height: auto;
+		}
