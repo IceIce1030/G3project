@@ -21,4 +21,3 @@ Mac、Windows
 *如果他有說要重建node-sass的話在執行，因為可能windows和Mac環境不一樣。
 
 https://github.com/IceIce1030/G3project.git
-
