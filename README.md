@@ -1,4 +1,4 @@
-Sass+Gulp+bower懶人包
+#h1 Sass+Gulp+bower懶人包
 step.1-1 http://nodejs.org/download/
 安裝 Node.js，因為 Gulp 是基於 Node.js 開發而成，所以就先上 Node.js 的官網下載安裝
 step.1-2 http://rubyinstaller.org/downloads/
