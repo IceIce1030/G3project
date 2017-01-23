@@ -1,7 +1,7 @@
 #Sass+Gulp+bower懶人包
-## step.1-1 http://nodejs.org/download/
+### step.1-1 http://nodejs.org/download/
  安裝 Node.js，因為 Gulp 是基於 Node.js 開發而成，所以就先上 Node.js 的官網下載安裝
-## step.1-2 http://rubyinstaller.org/downloads/
+### step.1-2 http://rubyinstaller.org/downloads/
 安裝 ruby (除了一直按 Next 之外，記得安裝途中把 Add Ruby executables to your PATH 勾選起來。)
 # step.2 npm install -g gulp
 把 Gulp 安裝到全域的環境(不用在特定資料夾)
