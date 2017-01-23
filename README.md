@@ -20,4 +20,6 @@ Mac、Windows
  npm rebuild node-sass (在G3那個資料夾)
 *如果他有說要重建node-sass的話在執行，因為可能windows和Mac環境不一樣。
 
+如果gulp無法順利彈出瀏覽器視窗 輸入 npm rebuild node-sass
+
 https://github.com/IceIce1030/G3project.git
