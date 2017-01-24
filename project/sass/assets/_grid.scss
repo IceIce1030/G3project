@@ -1,7 +1,7 @@
-// @import "mixin/mediaquery";
-// @import "var";
 *{
 	box-sizing: border-box;
+	font-family: '微軟正黑體';
+	
 }
 .container{
 	margin: auto;
@@ -38,9 +38,28 @@ div[class*= col-md-pull],
 div[class*= col-lg-push],
 div[class*= col-lg-pull]{position: relative;}
 
+// @include respones(xs) {
+// 		.container{
+// 			width:$grid-xs-container;
+// 		}
+// 	@for $i from 1 through $grid-column{
+// 		.col-xs-#{$i}{
+// 			width: 100%/$grid-column*$i;
+// 		}
+// 		.col-xs-push-#{$i}{
+// 			left:100%/$grid-column*$i;
+// 		}
+// 		.col-xs-pull-#{$i}{
+// 			right:100%/$grid-column*$i;
+// 		}
+// 		.col-xs-offset-#{$i}{
+// 			margin-left:100%/$grid-column*$i;
+// 		}
+// 	}
+// }
 @include respones(xs) {
 		.container{
-			width:$grid-xs-container;
+			width:$grid-sm-container;
 		}
 	@for $i from 1 through $grid-column{
 		.col-xs-#{$i}{
@@ -57,10 +76,10 @@ div[class*= col-lg-pull]{position: relative;}
 		}
 	}
 }
-@include respones(sm) {
-		.container{
-			width:$grid-sm-container;
-		}
+@include respones(sm){
+		.container {
+	    width: $grid-md-container;
+	  }
 	@for $i from 1 through $grid-column{
 		.col-sm-#{$i}{
 			width: 100%/$grid-column*$i;
@@ -72,25 +91,6 @@ div[class*= col-lg-pull]{position: relative;}
 			right:100%/$grid-column*$i;
 		}
 		.col-sm-offset-#{$i}{
-			margin-left:100%/$grid-column*$i;
-		}
-	}
-}
-@include respones(md){
-		.container {
-	    width: $grid-md-container;
-	  }
-	@for $i from 1 through $grid-column{
-		.col-md-#{$i}{
-			width: 100%/$grid-column*$i;
-		}
-		.col-md-push-#{$i}{
-			left:100%/$grid-column*$i;
-		}
-		.col-md-pull-#{$i}{
-			right:100%/$grid-column*$i;
-		}
-		.col-md-offset-#{$i}{
 			margin-left:100%/$grid-column*$i;
 		}
 	}
@@ -117,4 +117,4 @@ div[class*= col-lg-pull]{position: relative;}
 .rwd-img{
 			width: 100%;
 			height: auto;
-		}
+}

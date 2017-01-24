@@ -118,9 +118,9 @@ gulp.task('sass', function () {
 });
 
 gulp.task('watch',function(){
-    gulp.watch('project/sass/*.scss',['sass']);
+    
+    gulp.watch('project/sass/**/*.scss',['sass']);
 });
-
 gulp.task('default', ['watch','webserver']);
 //---------------------------
 

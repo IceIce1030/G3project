@@ -1,18 +1,23 @@
 //   grid
-// $rwd-xs-breakpoint:767px;	
-// $rwd-sm-breakpoint:992px;	
+// $rwd-xs-breakpoint:767px;
+// $rwd-sm-breakpoint:992px;
 // $rwd-md-breakpoint:1280px;
+
+$rwd-sm-breakpoint:767px;
+$rwd-lg-breakpoint:1200px;
 
 
 // container 寬度
-$rwd-xs-breakpoint:767px;
-$rwd-sm-breakpoint:996px;
+// $grid-xs-container:100%;
+// $grid-sm-container:750px;
+// $grid-md-container:960px;
+// $grid-lg-container:1170px;
 
 
-$grid-xs-container:100%;
-$grid-sm-container:750px;
-$grid-md-container:970px;
+$grid-sm-container:100%;
+$grid-md-container:100%;
 $grid-lg-container:1170px;
+
 
 $grid-container-padding:10px; //版面左右間距
 $grid-col-padding:10px; // 左右欄位間距

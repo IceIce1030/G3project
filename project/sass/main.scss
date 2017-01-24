@@ -1,17 +1,25 @@
 //管理全部
-@import "assets/font";//字型
 @import "assets/var";//變數
+@import "assets/color";//顏色
+@import "assets/font";//字型
 @import "assets/mixin/mixins";//function 函數
 @import "assets/grid";//格線
-@import "assets/color";//顏色
+
+//大家共用的nav、header、footer
+@import "layout/header";
+@import "layout/navbar";
+@import "layout/footer";
 
 
 
-@import "test";//測試
+
+@import "page/pageTest/pageTest";//測試
+// @import "page/page01/_page01_media";
 
 
-//import 進來
-//@import "自己新增一個scss";
-*{
-	outline: 1px solid #00f;
-}
+
+
+//*只能用font-size: 不能用font:
+//import 進來自己得scss檔案
+// @import "page/自己的scss的檔名";
+
