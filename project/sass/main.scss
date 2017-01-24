@@ -2,24 +2,25 @@
 @import "assets/var";//變數
 @import "assets/color";//顏色
 @import "assets/font";//字型
+@import "assets/radius";//圓角角度
 @import "assets/mixin/mixins";//function 函數
 @import "assets/grid";//格線
 
-//大家共用的nav、header、footer
-@import "layout/header";
-@import "layout/navbar";
-@import "layout/footer";
+//大家共用的nav、footer
+@import "layout/navbar";//大家共用的navbar的css
+@import "layout/footer";//大家共用的footer的css
 
 
-
-
-@import "page/pageTest/pageTest";//測試
-// @import "page/page01/_page01_media";
-
-
-
+@import "page/pageTest/pageTest";//測試可以註解掉
+//以下是要import大家寫的scss
+//@import "page/自己的scss的檔名";
+@import "page/index/index";
+@import "page/book/book";
+@import "page/service/service";
+@import "page/discuss/discuss";
+@import "page/race/race";
+@import "page/member/member";
 
 //*只能用font-size: 不能用font:
-//import 進來自己得scss檔案
-// @import "page/自己的scss的檔名";
+
 

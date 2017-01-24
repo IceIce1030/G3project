@@ -13,6 +13,9 @@
   padding-right: 10px;
   padding-left: 10px; }
 
+.fullcontainer {
+  width: 100%; }
+
 .row {
   margin-left: -10px;
   margin-right: -10px; }
@@ -391,42 +394,66 @@ div[class*=col-lg-pull] {
   height: auto; }
 
 @media screen and (min-width: 1201px) {
-  .box {
+  .testpage .box {
     background-color: #f00; } }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-  .box {
+  .testpage .box {
     background-color: #00f; } }
 
 @media screen and (max-width: 767px) {
-  .box {
+  .testpage .box {
     background-color: #fa0; } }
 
-.box {
+.testpage .box {
   font-size: 100px; }
 
-div {
+.testpage * {
   box-sizing: border-box; }
 
-h1 {
-  font-size: 40px;
-  color: #f00; }
+.testpage h1 {
+  font-size: 36px; }
 
-h2 {
+.testpage h2 {
   font-size: 32px; }
 
-h3 {
+.testpage h3 {
   font-size: 28px; }
 
-h4 {
+.testpage h4 {
   font-size: 24px; }
 
-p {
-  font-size: 16px; }
+.testpage p {
+  font-size: 20px; }
 
-.box {
+.testpage .box {
   border: 1px solid #000;
   height: 200px; }
 
-.minp {
-  font-size: 12px; }
+.testpage .minp {
+  font-size: 16px; }
+
+.testpage .color {
+  height: 200px;
+  border: 1px solid #000;
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px; }
+  .testpage .color p {
+    text-align: left; }
+  .testpage .color.color1 {
+    background-color: #ffa800; }
+  .testpage .color.color2 {
+    background-color: #b37600; }
+  .testpage .color.color3 {
+    background-color: #ef715a; }
+  .testpage .color.color4 {
+    background-color: #ff9100; }
+  .testpage .color.color5 {
+    background-color: #434343; }
+  .testpage .color.color6 {
+    background-color: #7d7d7d; }
+  .testpage .color.color7 {
+    background-color: #774720; }
+  .testpage .color.color8 {
+    background-color: #f9f7e8; }
