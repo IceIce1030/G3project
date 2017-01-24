@@ -9,8 +9,16 @@ var gulp       = require('gulp'),
     htmlreplace = require('gulp-html-replace'),
   	minifyHTML  = require('gulp-minify-html'),
     sass = require('gulp-sass'),
-  	compass   = require('gulp-compass');
+  	compass   = require('gulp-compass'),
+    connect = require('gulp-connect-php');
 
+
+
+//-------php
+
+
+
+//----------
 
 //-------------------------
 //把CSS檔案合併成一個all.css

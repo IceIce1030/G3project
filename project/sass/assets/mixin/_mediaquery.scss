@@ -1,17 +1,54 @@
-@mixin respones($breakpoint){
-	@if $breakpoint=="small"{
-		@media all and(max-width: $small){
-			@content;
-		}
-	}
-	@else if $breakpoint=="medium"{
-		@media all and(max-width: $max-medium)and (min-width: $min-medium){
-			@content;
-		}
-	}
-	@else if $breakpoint == "large" {
-        @media all and (min-width: $large) {
+@mixin respones($screen-size) {
+
+    //<767 手機
+     @if $screen-size == "xs" {
+        @media screen and (max-width: $rwd-xs-breakpoint) {
              @content;
         }
     }
+    //平板
+    @else if $screen-size == "sm" {
+        @media screen and (max-width: $rwd-sm-breakpoint+1) and (min-width: $rwd-xs-breakpoint + 1) {
+             @content;
+        }
+    }
+
+
+    //>996 桌電
+    @else if $screen-size == "lg" {
+        @media screen and (min-width: $rwd-sm-breakpoint + 1) {
+             @content;
+        }
+    }
+
+
+
+
+
+
+
+    // @if $screen-size == "xs" {
+    //     @media screen and (max-width: $rwd-xs-breakpoint) {
+    //          @content;
+    //     }
+    // }
+
+    // @else if $screen-size == "sm" {
+    //     @media screen and (max-width: $rwd-sm-breakpoint) and (min-width: $rwd-xs-breakpoint + 1) {
+    //          @content;
+    //     }
+    // }
+
+    // @else if $screen-size == "md" {
+    //     @media screen and (max-width: $rwd-md-breakpoint) and (min-width: $rwd-sm-breakpoint + 1) {
+    //          @content;
+    //     }
+    // }
+
+    
+    // @else if $screen-size == "lg" {
+    //     @media screen and (min-width: $rwd-md-breakpoint + 1) {
+    //          @content;
+    //     }
+    // }
 }

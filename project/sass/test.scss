@@ -1,3 +1,27 @@
 div{
 	box-sizing:(border-box);
 }
+h1{
+	font:$fz-h1;
+	color:$red;
+}
+h2{
+	font:$fz-h2;
+}
+h3{
+	font:$fz-h3;
+}
+h4{
+	font:$fz-h4;
+}
+.box{
+	background-color: #fff;
+	border:1px solid #f00;
+	height: 200px;
+}
+@include respones(xs){
+	//meadiquery 這樣寫
+	.test{
+		background-color: #fa0;
+	}
+}

@@ -3,10 +3,15 @@
 @import "assets/var";//變數
 @import "assets/mixin/mixins";//function 函數
 @import "assets/grid";//格線
+@import "assets/color";//顏色
 
-// @import "test";//測試
 
 
+@import "test";//測試
+
+
+//import 進來
 //@import "自己新增一個scss";
-
-// @include box-sizing(border-box);
+*{
+	outline: 1px solid #00f;
+}
