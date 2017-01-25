@@ -424,19 +424,19 @@ div[class*=col-lg-pull] {
   font-size: 24px; }
 
 .testpage p {
-  font-size: 20px; }
+  font-size: 16px; }
 
 .testpage .box {
   border: 1px solid #000;
   height: 200px; }
 
 .testpage .minp {
-  font-size: 16px; }
+  font-size: 13px; }
 
 .testpage .color {
   height: 200px;
   border: 1px solid #000;
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
   line-height: 50px; }
   .testpage .color p {
